@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		9911D1A71ADA9A6000155751 /* WowUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9911D1A61ADA9A6000155751 /* WowUtilsTests.m */; };
+		99E3E1201ADAC39600198F0A /* character.json in Resources */ = {isa = PBXBuildFile; fileRef = 99E3E11E1ADAC39600198F0A /* character.json */; };
+		99E3E1211ADAC39600198F0A /* guild.json in Resources */ = {isa = PBXBuildFile; fileRef = 99E3E11F1ADAC39600198F0A /* guild.json */; };
+		99E3E1231ADAC51200198F0A /* CharacterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99E3E1221ADAC51200198F0A /* CharacterTests.m */; };
 		CB9FDC4015E9872D00B3713E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC3F15E9872D00B3713E /* UIKit.framework */; };
 		CB9FDC4215E9872D00B3713E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC4115E9872D00B3713E /* Foundation.framework */; };
 		CB9FDC4415E9872D00B3713E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9FDC4315E9872D00B3713E /* CoreGraphics.framework */; };
@@ -84,6 +87,9 @@
 		9911D19B1ADA8FF000155751 /* GuildBrowserLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuildBrowserLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9911D19E1ADA8FF000155751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9911D1A61ADA9A6000155751 /* WowUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WowUtilsTests.m; sourceTree = "<group>"; wrapsLines = 1; };
+		99E3E11E1ADAC39600198F0A /* character.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = character.json; sourceTree = "<group>"; };
+		99E3E11F1ADAC39600198F0A /* guild.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = guild.json; sourceTree = "<group>"; };
+		99E3E1221ADAC51200198F0A /* CharacterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterTests.m; sourceTree = "<group>"; };
 		CB9FDC3B15E9872D00B3713E /* GuildBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuildBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9FDC3F15E9872D00B3713E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CB9FDC4115E9872D00B3713E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -202,6 +208,7 @@
 			children = (
 				9911D19D1ADA8FF000155751 /* Supporting Files */,
 				9911D1A61ADA9A6000155751 /* WowUtilsTests.m */,
+				99E3E1221ADAC51200198F0A /* CharacterTests.m */,
 			);
 			path = GuildBrowserLogicTests;
 			sourceTree = "<group>";
@@ -214,9 +221,19 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		99E3E11D1ADAC39600198F0A /* testdata */ = {
+			isa = PBXGroup;
+			children = (
+				99E3E11E1ADAC39600198F0A /* character.json */,
+				99E3E11F1ADAC39600198F0A /* guild.json */,
+			);
+			path = testdata;
+			sourceTree = "<group>";
+		};
 		CB9FDC3015E9872D00B3713E = {
 			isa = PBXGroup;
 			children = (
+				99E3E11D1ADAC39600198F0A /* testdata */,
 				CB9FDCEC15E9B31400B3713E /* images */,
 				CB9FDCC115E9A8DA00B3713E /* AFNetworking */,
 				CB9FDC4515E9872D00B3713E /* GuildBrowser */,
@@ -494,6 +511,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99E3E1201ADAC39600198F0A /* character.json in Resources */,
+				99E3E1211ADAC39600198F0A /* guild.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +577,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9911D1A71ADA9A6000155751 /* WowUtilsTests.m in Sources */,
+				99E3E1231ADAC51200198F0A /* CharacterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
