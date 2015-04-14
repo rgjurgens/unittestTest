@@ -64,6 +64,9 @@
 // 1
 -(void)testCreateCharacterFromDetailJsonProps
 {
+    _testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
+    XCTAssertNotNil(_testGuy, @"Could not create character from detail json");
+    
     XCTAssertEqualObjects(_testGuy.thumbnail, @"borean-tundra/171/40508075-avatar.jpg", @"thumbnail url is wrong");
     XCTAssertEqualObjects(_testGuy.name, @"Hagrel", @"name is wrong");
     XCTAssertEqualObjects(_testGuy.battleGroup, @"Emberstorm", @"battlegroup is wrong");
@@ -81,6 +84,10 @@
 // 2
 -(void)testCreateCharacterFromDetailJsonValidateItems
 {
+    _testGuy = [[Character alloc] initWithCharacterDetailData:_characterDetailJson];
+    XCTAssertNotNil(_testGuy, @"Could not create character from detail json");
+    
+    
     XCTAssertEqualObjects(_testGuy.neckItem.name,@"Stoneheart Choker", @"name is wrong");
     XCTAssertEqualObjects(_testGuy.wristItem.name,@"Vicious Pyrium Bracers", @"name is wrong");
     XCTAssertEqualObjects(_testGuy.waistItem.name,@"Girdle of the Queen's Champion", @"name is wrong");
